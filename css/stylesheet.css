@@ -1,0 +1,291 @@
+body, html{
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	width: 100%;
+}
+
+.header{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	z-index: 100;
+	display: table;
+}
+
+.header-text{
+	font-size: 18px;
+	font-family: 'Roboto';
+	font-weight: 100;
+	color: black;
+}
+
+#info-triangle{
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid white; 
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 2px;
+}
+
+#hovered-text{
+	height: 15px;
+	width: 100px;
+	display: none;
+	font-family: 'Poiret One';
+	font-size: 15px;
+	color: white;
+	position: relative;
+	left: 5px;
+	top: 5px;
+	text-decoration: none;
+}
+
+#info-triangle:hover #hovered-text{
+	display: block;
+}
+
+.modal-display{
+	position: fixed;
+	font-family: 'Raleway';
+	font-size: 20px;
+	top: 0; left: 0; bottom: 0; right: 0;
+	z-index: 999;
+	background: rgb(0, 0, 0, 0.9);
+	transition: linear 1s;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.modal-display:target{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+#modal-content{
+	width: 70%;
+	height: 70%;
+	margin: 10% auto;
+	background: #F19A3E;
+}
+
+#modal-head{
+	font-family: 'Roboto';
+	font-size: 40px;
+	position: relative;
+	top: 10%;
+	text-align: center;
+	color: white;
+}
+
+#logo{
+	width: 50%;
+	height: 50%;
+}
+
+#monica{
+	font-size: 15px;
+	font-family: 'Roboto';
+	color: white;
+	position: relative;
+	bottom: -15px;
+	left: 10px;
+	opacity: 0.5;
+}
+
+.close{
+	position: relative;
+	margin: 4px;
+}
+
+#email-box{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#github-handle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	color: black;
+}
+
+#linkedin-handle{
+	position: absolute;
+	top: 0;
+	right: 34px;
+	margin: 10px;
+	color: black;
+}
+
+#header-space{
+	height: 50px;
+	width: 100%;
+}
+
+.page{
+	width: 100%;
+	height: calc(100vh - 50px);
+	/*min-height: 100%;*/
+	position: relative;
+}
+
+#splash{
+	background-color: #94FFED;
+}
+
+#center-box{
+	background-color: black;
+	width: 40%;
+	height: 40%;
+ 	overflow: auto;
+ 	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	display: table;
+}
+
+#headline{
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Poiret One';
+	color: #94FFED;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.down{
+	margin: 10px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.down:hover{
+	cursor: pointer;
+	color: white;
+	transition: linear .2s;
+}
+
+#main{
+	background-color: #F3FF87;
+}
+
+#main-img{
+	height: 33%;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin: auto;
+	border: 10px solid #F3FF87;
+	z-index: 100;
+}
+
+.box{
+	height: calc(50% - 15px);
+	width: calc(50% - 15px);
+	margin: 10px;
+	position: absolute;
+	font-size: 20px;
+	font-family: 'Roboto';
+	font-weight: 100;
+}
+
+#top-left{
+	top: 0;
+	left: 0;
+	background-color: #E87A5A;
+	transition-duration: 0.5s;
+}
+
+#top-left:hover{
+	cursor: pointer;
+	background-color: #E68D73;
+	transition-duration: 0.5s;
+}
+
+#top-right{
+	top: 0;
+	right: 0;
+	background-color: #D3BDB0;
+}
+
+#bottom-left{
+	bottom: 0;
+	left: 0;
+	background-color: #C1FBFF;
+}
+
+#bottom-right{
+	bottom: 0;
+	right: 0;
+	background-color: #A4D4B4;
+}
+
+#top-left p{
+	margin: .8em;
+	position: absolute;
+	left: 0;
+}
+
+#top-right p{
+	margin: .8em;
+	position: absolute;
+	right: 0;
+}
+
+#bottom-left p{
+	margin: .8em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#bottom-right p{
+	margin: .8em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#about-me{
+	background-color: #F3FF87;
+	display: table;
+}
+
+#background-animated{
+	position: absolute;
+	width: 1px; height: 1px;
+	background-color: #E87A5A;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto;
+	opacity: 0;
+}
+
+#about-me-text{
+	display: none;
+}
+
+#about-me-header{
+	position: relative;
+	top: 30px;
+	font-size: 40px;
+	font-family: 'Open Sans Condensed';
+	font-weight: 300;
+	line-height: 35px;
+	text-align: center;
+	color: white;
+}
+
+
+
+
